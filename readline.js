@@ -14,4 +14,8 @@ rl.on('line', (line) => {
 
 rl.on('close', () => {//filter(x => x.indexOf("Sao") > -1)
     console.log(teste.map(x => x).filter(x => x.indexOf("Sao") > -1))
+        let sla = teste.map(x => x).filter(x => x.indexOf("Sao") > -1)
+/*     console.log(teste) */
+    const names = teste.map(data => data.split(",")[0])
+    console.log(names)
 })
